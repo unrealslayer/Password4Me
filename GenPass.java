@@ -1,20 +1,29 @@
-package sample;
+//: GetPassword/GenPass.java
+
+package GetPassword;
 
 import java.util.Random;
 
-/**
- * Created by deadboy on 29.10.15.
+/** Class implements the generation of the password
+ * @author deadboy
+ * @author leo13pard@ya.ru
+ * @version 1.0
  */
-public class GenPass {
+
+class GenPass {
     private String Password = "";
     private int Sloj, dlina;
 
     GenPass(int Sloj, int dlina) {
         this.Sloj = Sloj;
         this.dlina = dlina;
+        Pass();
     }
-
-    String Pass() {
+    /** This method returns generated password.*/
+    String GetPassword() {
+        return Password;
+    }
+    private void Pass() {
         Random r = new Random();
         switch (Integer.valueOf(String.valueOf(Sloj))) {
             case 1: {
@@ -75,6 +84,5 @@ public class GenPass {
                 break;
             }
         }
-        return Password;
     }
 }

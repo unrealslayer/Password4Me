@@ -1,4 +1,6 @@
-package sample;
+//: GetPassword/Main.java
+
+package GetPassword;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,8 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+/** This program generates a password , according to the end-user settings
+ * @author deadboy
+ * @author leo13pard@ya.ru
+ * @version 1.0
+ */
 
+public class Main extends Application {
+    /** Creating a window.*/
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("window.fxml"));
@@ -24,5 +32,7 @@ public class Main extends Application {
         launch(args);
     }
 }
+///:~
 
 //Счетчик сгенерированных паролей
+//Размер окна через String args
