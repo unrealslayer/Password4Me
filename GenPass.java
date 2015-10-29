@@ -19,8 +19,8 @@ class GenPass {
         this.dlina = dlina;
         Pass();
     }
-    /** This method returns generated password.*/
     String GetPassword() {
+        /** @return generated password.*/
         return Password;
     }
     private void Pass() {
