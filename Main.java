@@ -34,5 +34,6 @@ public class Main extends Application {
 }
 ///:~
 
-//Счетчик сгенерированных паролей
-//Размер окна через String args
+/**Future*/
+//Add count of passwords (all and session)
+//Settings with symbols on right side of window

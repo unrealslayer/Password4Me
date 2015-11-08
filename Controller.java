@@ -48,6 +48,9 @@ public class Controller implements Initializable{
     /** The "text with result" displaying the generated password.*/
     @FXML
     Text Pass;
+    /** The "text with count of passwords" displaying count of generated passwords.*/
+    @FXML
+    Text Count;
     /** The method "GoGeneration()" starts when you press the
      * button "Generate". It generates password, displays it
      * in the "text with result" and copy to the clipboard.
