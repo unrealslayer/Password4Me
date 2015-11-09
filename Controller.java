@@ -48,6 +48,9 @@ public class Controller implements Initializable{
     /** The "text with result" displaying the generated password.*/
     @FXML
     Text Pass;
+    /** Settings.*/
+    @FXML
+    Button settings;
     /** The "text with count of passwords" displaying count of generated passwords.*/
     @FXML
     Text Count;
@@ -60,10 +63,19 @@ public class Controller implements Initializable{
         Pass.setText("");
         GenPass gp = new GenPass(Integer.valueOf(String.valueOf(ChoiseSloj.getValue())), Integer.valueOf(tf.getText()));
         Password = gp.GetPassword();
+        counts cs = new counts(Password.length());
+        Count.setText(cs.GetCounts());
         if (Password.length() < 61) Pass.setText(Password);
         else Pass.setText(Password.substring(0, 51) + "\n" + Password.substring(51));
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(Password), null);
     }
+
+    public void OpenSettings() {
+        new SettingsWindow();
+        /*
+        * */
+    }
+
     /** The method "ChangeLength()" called when the button is
      * pressed in the input field of the password length.
      */

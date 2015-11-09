@@ -35,5 +35,5 @@ public class Main extends Application {
 ///:~
 
 /**Future*/
-//Add count of passwords (all and session)
+//Add count of passwords and sum them length in this session
 //Settings with symbols on right side of window
