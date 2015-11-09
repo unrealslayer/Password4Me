@@ -37,3 +37,4 @@ public class Main extends Application {
 /**Future*/
 //Add count of passwords and sum them length in this session
 //Settings with symbols on right side of window
+//Add "space" after 4 symbols of password

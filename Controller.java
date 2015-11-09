@@ -10,9 +10,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
     /** Processes events scene
@@ -28,14 +30,14 @@ public class Controller implements Initializable{
     boolean flag = false;
     /** The "password" that is displayed in the output password.
      */
-    String Password;
+    String password;
 
     /** The "text-field" that contains the length of the password.*/
     @FXML
     TextField tf;
     /** The "choice-box" that contains the kind of the password.*/
     @FXML
-    ChoiceBox ChoiseSloj;
+    ChoiceBox choiseSloj;
     /** The "slider" allows "touch" to choose the password length.*/
     @FXML
     Slider slider;
@@ -44,36 +46,37 @@ public class Controller implements Initializable{
     Button btn;
     /** The "text with hint" showing what type of password you selected.*/
     @FXML
-    Text Podskazka;
+    Text podskazka;
     /** The "text with result" displaying the generated password.*/
     @FXML
-    Text Pass;
+    Text pass;
     /** Settings.*/
     @FXML
     Button settings;
     /** The "text with count of passwords" displaying count of generated passwords.*/
     @FXML
-    Text Count;
+    Text count;
+    /** The AnchorPane for control disable in 2nd window.*/
+    @FXML
+    AnchorPane mainAnchorPane;
     /** The method "GoGeneration()" starts when you press the
      * button "Generate". It generates password, displays it
      * in the "text with result" and copy to the clipboard.
      */
     public void GoGeneration() {
-        Password = "";
-        Pass.setText("");
-        GenPass gp = new GenPass(Integer.valueOf(String.valueOf(ChoiseSloj.getValue())), Integer.valueOf(tf.getText()));
-        Password = gp.GetPassword();
-        counts cs = new counts(Password.length());
-        Count.setText(cs.GetCounts());
-        if (Password.length() < 61) Pass.setText(Password);
-        else Pass.setText(Password.substring(0, 51) + "\n" + Password.substring(51));
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(Password), null);
+        password = "";
+        pass.setText("");
+        GenPass gp = new GenPass(Integer.valueOf(String.valueOf(choiseSloj.getValue())), Integer.valueOf(tf.getText()));
+        password = gp.GetPassword();
+        counts cs = new counts(password.length());
+        count.setText(cs.GetCounts());
+        if (password.length() < 61) pass.setText(password);
+        else pass.setText(password.substring(0, 51) + "\n" + password.substring(51));
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(password), null);
     }
 
-    public void OpenSettings() {
-        new SettingsWindow();
-        /*
-        * */
+    public void OpenSettings() throws IOException{
+        new SettingsWindow(mainAnchorPane);
     }
 
     /** The method "ChangeLength()" called when the button is
@@ -104,8 +107,9 @@ public class Controller implements Initializable{
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ChoiseSloj.getItems().setAll(1, 2, 3, 4, 5);
-        ChoiseSloj.setValue(4);
+
+        choiseSloj.getItems().setAll(1, 2, 3, 4, 5);
+        choiseSloj.setValue(4);
         Platform.runLater(() -> btn.requestFocus());
         tf.textProperty().bind(Bindings.format("%.0f", slider.valueProperty()));
         tf.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -125,22 +129,22 @@ public class Controller implements Initializable{
                 }
             }
         });
-        ChoiseSloj.valueProperty().addListener((observable, oldValue, newValue) -> {
+        choiseSloj.valueProperty().addListener((observable, oldValue, newValue) -> {
             switch (Integer.valueOf(String.valueOf(newValue))) {
                 case 1:
-                    Podskazka.setText("*Только цифры.");
+                    podskazka.setText("*Только цифры.");
                     break;
                 case 2:
-                    Podskazka.setText("*Английские буквы.");
+                    podskazka.setText("*Английские буквы.");
                     break;
                 case 3:
-                    Podskazka.setText("*Английские буквы и цифры.");
+                    podskazka.setText("*Английские буквы и цифры.");
                     break;
                 case 4:
-                    Podskazka.setText("*Английские буквы разных регистров и цифры.");
+                    podskazka.setText("*Английские буквы разных регистров и цифры.");
                     break;
                 case 5:
-                    Podskazka.setText("*Англ. и Рус. буквы разных регистров и цифры.");
+                    podskazka.setText("*Англ. и Рус. буквы разных регистров и цифры.");
                     break;
             }
         });
