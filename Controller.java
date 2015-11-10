@@ -2,6 +2,7 @@
 
 package GetPassword;
 
+import GetPassword.Settings_package.SettingsWindow;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
@@ -76,7 +77,7 @@ public class Controller implements Initializable{
     }
 
     public void OpenSettings() throws IOException{
-        new SettingsWindow(mainAnchorPane);
+        new GetPassword.Settings_package.SettingsWindow(mainAnchorPane);
     }
 
     /** The method "ChangeLength()" called when the button is

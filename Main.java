@@ -23,7 +23,7 @@ public class Main extends Application {
         primaryStage.setTitle("Password4Me");
         primaryStage.setScene(new Scene(root, 550, 240));
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("ic2.png")));
+        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("images/ic2.png")));
         primaryStage.show();
     }
 

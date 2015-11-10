@@ -8,7 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GetPassword.Settings_package.SettingsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#1f93ff00" height="155.0" layoutX="20.0" layoutY="55.0" strokeType="INSIDE" strokeWidth="2.0" width="760.0">
          <stroke>
@@ -191,7 +191,7 @@
             <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="225.0" GridPane.columnIndex="1" />
          </children>
       </GridPane>
-      <Button fx:id="btnOK" layoutX="750.0" layoutY="320.0" mnemonicParsing="false" onAction="#OKevent" text="ОК" />
+      <Button layoutX="750.0" layoutY="320.0" mnemonicParsing="false" text="ОК" />
       <Button layoutX="667.0" layoutY="320.0" mnemonicParsing="false" text="Отмена" />
       <Line endX="700.0" layoutX="100.0" layoutY="25.0" startX="-100.0" strokeWidth="2.0">
          <stroke>

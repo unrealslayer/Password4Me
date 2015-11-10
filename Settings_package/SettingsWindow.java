@@ -1,4 +1,4 @@
-package GetPassword;
+package GetPassword.Settings_package;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,11 +16,13 @@ import static javafx.application.Platform.runLater;
  */
 public class SettingsWindow {
     private AnchorPane mainAnchorPane;
-    SettingsWindow(AnchorPane mainAnchorPane) throws IOException {
+    boolean hide = false;
+    public SettingsWindow(AnchorPane mainAnchorPane) throws IOException {
         this.mainAnchorPane = mainAnchorPane;
+
         Stage settingsStage = new Stage();
         Parent settingsRoot = new FXMLLoader().load(getClass().getResource("settingsWindow.fxml"));
-        Scene scene = new Scene(settingsRoot, 700, 300);
+        Scene scene = new Scene(settingsRoot, 800, 350);
         settingsStage.setScene(scene);
         settingsStage.setTitle("Settings");
         settingsStage.setResizable(false);
@@ -30,5 +32,6 @@ public class SettingsWindow {
         settingsStage.show();
         mainAnchorPane.setDisable(true);
         settingsStage.addEventHandler(WindowEvent.WINDOW_CLOSE_REQUEST, event -> mainAnchorPane.setDisable(false));
+        //Мне не нужно новое окно
     }
 }
