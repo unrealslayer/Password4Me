@@ -15,23 +15,43 @@ import static javafx.application.Platform.runLater;
  * Created by deadboy on 09.11.15.
  */
 public class SettingsWindow {
-    private AnchorPane mainAnchorPane;
-    boolean hide = false;
-    public SettingsWindow(AnchorPane mainAnchorPane) throws IOException {
-        this.mainAnchorPane = mainAnchorPane;
+    private static boolean created = false;
+    private static Stage settingsStage;
+    private static AnchorPane mainAnchorPane;
 
-        Stage settingsStage = new Stage();
-        Parent settingsRoot = new FXMLLoader().load(getClass().getResource("settingsWindow.fxml"));
-        Scene scene = new Scene(settingsRoot, 800, 350);
-        settingsStage.setScene(scene);
-        settingsStage.setTitle("Settings");
-        settingsStage.setResizable(false);
-        settingsStage.focusedProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue) runLater(settingsStage::requestFocus);
-        });
-        settingsStage.show();
-        mainAnchorPane.setDisable(true);
-        settingsStage.addEventHandler(WindowEvent.WINDOW_CLOSE_REQUEST, event -> mainAnchorPane.setDisable(false));
-        //Мне не нужно новое окно
+    public SettingsWindow(AnchorPane mainAnchorPane) throws IOException {
+        if (created) {
+            settingsStage.show();
+        } else {
+            this.mainAnchorPane = mainAnchorPane;
+            created = true;
+            settingsStage = new Stage();
+            Parent settingsRoot = new FXMLLoader().load(getClass().getResource("settingsWindow.fxml"));
+            Scene scene = new Scene(settingsRoot, 800, 350);
+            settingsStage.setScene(scene);
+            settingsStage.setTitle("Settings");
+            settingsStage.setResizable(false);
+            settingsStage.focusedProperty().addListener((observable, oldValue, newValue) -> {
+                if (!newValue) runLater(settingsStage::requestFocus);
+            });
+            settingsStage.show();
+            mainAnchorPane.setDisable(true);
+            settingsStage.addEventHandler(WindowEvent.WINDOW_CLOSE_REQUEST, event -> {
+                mainAnchorPane.setDisable(false);
+                settingsStage.close();
+            });
+        }
+    }
+
+    public SettingsWindow() {
+
+    }
+
+    Stage GetStage() {
+        return settingsStage;
+    }
+
+    AnchorPane GetPane() {
+        return mainAnchorPane;
     }
 }
