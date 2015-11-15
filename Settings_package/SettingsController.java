@@ -228,47 +228,25 @@ public class SettingsController implements Initializable{
         }
     }
 
-    //Уменьшить количество кода!
     private void load_alph(boolean en_ru) { //false=en
-        if (!en_ru) {
-            for (int i = 0; i < 26; i++) {
-                tBtns_en_ru[i].setText(ENG_ALPHABET[i]);
-                if (btn_up.isSelected()) {
-                    if (btnsState_en_ru[i][1][1]) tBtns_en_ru[i].setSelected(true);
-                    else tBtns_en_ru[i].setSelected(false);
-                } else {
-                    tBtns_en_ru[i].setText(tBtns_en_ru[i].getText().toLowerCase());
-                    if (btnsState_en_ru[i][1][0]) tBtns_en_ru[i].setSelected(true);
-                    else tBtns_en_ru[i].setSelected(false);
-                }
-            }
-            for (ToggleButton tb : tBtns_ru) tb.setVisible(false);
-        } else {
-            for (int i = 0; i < 26; i++) {
-                tBtns_en_ru[i].setText(RU_ALPHABET[i]);
-                if (btn_up.isSelected()) {
-                    if (btnsState_en_ru[i][0][1]) tBtns_en_ru[i].setSelected(true);
-                    else tBtns_en_ru[i].setSelected(false);
-                } else {
-                    tBtns_en_ru[i].setText(tBtns_en_ru[i].getText().toLowerCase());
-                    if (btnsState_en_ru[i][0][0]) tBtns_en_ru[i].setSelected(true);
-                    else tBtns_en_ru[i].setSelected(false);
-                }
-            }
+        for (int i = 0; i < 26; i++) {
+            tBtns_en_ru[i].setText((!en_ru) ? ENG_ALPHABET[i] : RU_ALPHABET[i]);
+            if (btnsState_en_ru[i][!en_ru?1:0][btn_up.isSelected()?1:0]) tBtns_en_ru[i].setSelected(true);
+            else tBtns_en_ru[i].setSelected(false);
+            if (!btn_up.isSelected()) tBtns_en_ru[i].setText(tBtns_en_ru[i].getText().toLowerCase());
+        }
+        if (!en_ru) for (ToggleButton tb : tBtns_ru) tb.setVisible(false);
+        else {
             for (int i = 0; i < 6; i++) {
-                if (btn_up.isSelected()) {
-                    if (btnState_ru[i][1]) tBtns_ru[i].setSelected(true);
-                    else tBtns_ru[i].setSelected(false);
-                    tBtns_ru[i].setVisible(true);
-                } else {
-                    tBtns_ru[i].setText(tBtns_ru[i].getText().toLowerCase());
-                    if (btnState_ru[i][0]) tBtns_ru[i].setSelected(true);
-                    else tBtns_ru[i].setSelected(false);
-                    tBtns_ru[i].setVisible(true);
-                }
+                if (btnState_ru[i][btn_up.isSelected()?1:0]) tBtns_ru[i].setSelected(true);
+                else tBtns_ru[i].setSelected(false);
+                tBtns_ru[i].setVisible(true);
             }
+            if (!btn_up.isSelected()) for (ToggleButton tb : tBtns_ru) tb.setText(tb.getText().toLowerCase());
+            else for (ToggleButton tb : tBtns_ru) tb.setText(tb.getText().toUpperCase());
         }
     }
+
     public void change_enRU() {
         if (btn_enRU.isSelected()) {
             //Pressed
