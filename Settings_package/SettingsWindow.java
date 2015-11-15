@@ -26,7 +26,7 @@ public class SettingsWindow {
             this.mainAnchorPane = mainAnchorPane;
             created = true;
             settingsStage = new Stage();
-            Parent settingsRoot = new FXMLLoader().load(getClass().getResource("settingsWindow.fxml"));
+            Parent settingsRoot = new FXMLLoader().load(SettingsWindow.class.getResource("settingsWindow.fxml"));
             Scene scene = new Scene(settingsRoot, 800, 350);
             settingsStage.setScene(scene);
             settingsStage.setTitle("Settings");

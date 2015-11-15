@@ -3,11 +3,13 @@
 package GetPassword;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 /** This program generates a password , according to the end-user settings
  * @author deadboy
@@ -25,6 +27,7 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("images/ic2.png")));
         primaryStage.show();
+        primaryStage.setOnCloseRequest(we -> System.exit(0));
     }
 
 
@@ -35,6 +38,4 @@ public class Main extends Application {
 ///:~
 
 /**Future*/
-//Add count of passwords and sum them length in this session
-//Settings with symbols on right side of window
 //Add "space" after 4 symbols of password

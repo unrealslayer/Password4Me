@@ -88,35 +88,34 @@
                         <ToggleGroup fx:id="tg" />
                      </toggleGroup></ToggleButton>
                   <ToggleButton fx:id="btn_up" layoutX="387.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#change_UP" prefHeight="26.0" prefWidth="45.0" selected="true" text="up" toggleGroup="$tg" />
-                  <ToggleButton fx:id="pos_1_12" layoutX="420.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="Ъ" visible="false" />
                </children>
             </Pane>
             <Pane prefHeight="151.0" prefWidth="213.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <ToggleButton layoutX="15.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="7" />
-                  <ToggleButton layoutX="50.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="8" />
-                  <ToggleButton layoutX="85.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="9" />
-                  <ToggleButton layoutX="15.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="4" />
-                  <ToggleButton layoutX="50.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="5" />
-                  <ToggleButton layoutX="85.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="6" />
-                  <ToggleButton layoutX="15.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="1" />
-                  <ToggleButton layoutX="50.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="2" />
-                  <ToggleButton layoutX="85.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="3" />
-                  <ToggleButton layoutX="50.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="0" />
-                  <ToggleButton layoutX="15.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="!" />
-                  <ToggleButton layoutX="85.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\@" />
-                  <ToggleButton layoutX="125.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="|" />
-                  <ToggleButton layoutX="160.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\$" />
-                  <ToggleButton layoutX="195.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="#" />
-                  <ToggleButton layoutX="125.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\\" />
-                  <ToggleButton layoutX="160.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="№" />
-                  <ToggleButton layoutX="195.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\%" />
-                  <ToggleButton layoutX="125.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="/" />
-                  <ToggleButton layoutX="160.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="^" />
-                  <ToggleButton layoutX="195.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&amp;" />
-                  <ToggleButton layoutX="125.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="?" />
-                  <ToggleButton layoutX="160.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&lt;" />
-                  <ToggleButton layoutX="195.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&gt;" />
+                  <ToggleButton fx:id="tab1_1_1" layoutX="15.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="7" />
+                  <ToggleButton fx:id="tab1_1_2" layoutX="50.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="8" />
+                  <ToggleButton fx:id="tab1_1_3" layoutX="85.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="9" />
+                  <ToggleButton fx:id="tab1_2_1" layoutX="15.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="4" />
+                  <ToggleButton fx:id="tab1_2_2" layoutX="50.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="5" />
+                  <ToggleButton fx:id="tab1_2_3" layoutX="85.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="6" />
+                  <ToggleButton fx:id="tab1_3_1" layoutX="15.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="1" />
+                  <ToggleButton fx:id="tab1_3_2" layoutX="50.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="2" />
+                  <ToggleButton fx:id="tab1_3_3" layoutX="85.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="3" />
+                  <ToggleButton fx:id="tab1_4_2" layoutX="50.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="0" />
+                  <ToggleButton fx:id="tab1_4_1" layoutX="15.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="!" />
+                  <ToggleButton fx:id="tab1_4_3" layoutX="85.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\@" />
+                  <ToggleButton fx:id="tab2_1_1" layoutX="125.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="|" />
+                  <ToggleButton fx:id="tab2_1_2" layoutX="160.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\$" />
+                  <ToggleButton fx:id="tab2_1_3" layoutX="195.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="#" />
+                  <ToggleButton fx:id="tab2_2_1" layoutX="125.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\\" />
+                  <ToggleButton fx:id="tab2_2_2" layoutX="160.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="№" />
+                  <ToggleButton fx:id="tab2_2_3" layoutX="195.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="\%" />
+                  <ToggleButton fx:id="tab2_3_1" layoutX="125.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="/" />
+                  <ToggleButton fx:id="tab2_3_2" layoutX="160.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="^" />
+                  <ToggleButton fx:id="tab2_3_3" layoutX="195.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&amp;" />
+                  <ToggleButton fx:id="tab2_4_1" layoutX="125.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="?" />
+                  <ToggleButton fx:id="tab2_4_2" layoutX="160.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&lt;" />
+                  <ToggleButton fx:id="tab2_4_3" layoutX="195.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="32.04" text="&gt;" />
                </children></Pane>
             <ToggleButton fx:id="btn_enRU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#change_enRU" prefHeight="25.0" prefWidth="36.0" text="En">
                <GridPane.margin>
@@ -157,25 +156,25 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <RadioButton mnemonicParsing="false" text="Я хочу добавить свои символы" />
-            <Label disable="true" text="Введите символы:" GridPane.rowIndex="1">
+            <RadioButton fx:id="mySym_T_F" mnemonicParsing="false" onAction="#iWannaMySym" text="Я хочу добавить свои символы" />
+            <Label fx:id="addUSym" disable="true" text="Введите символы:" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="5.0" />
                </GridPane.margin>
             </Label>
-            <TextField prefHeight="25.0" prefWidth="355.0" GridPane.rowIndex="1">
+            <TextField fx:id="setUSym" prefHeight="25.0" prefWidth="355.0" GridPane.rowIndex="1">
                <GridPane.margin>
-                  <Insets left="140.0" right="60.0" />
+                  <Insets left="140.0" right="40.0" />
                </GridPane.margin>
             </TextField>
-            <RadioButton disable="true" mnemonicParsing="false" text="Я хочу использовать ТОЛЬКО свои символы" GridPane.columnIndex="1" />
-            <ToggleButton disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="UpCase" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ToggleButton disable="true" layoutX="380.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="LowCase" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <RadioButton fx:id="setOnlyMySym" disable="true" mnemonicParsing="false" text="Я хочу использовать ТОЛЬКО свои символы" GridPane.columnIndex="1" />
+            <ToggleButton fx:id="btn_UpCase" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="UpCase" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ToggleButton fx:id="btn_LowCase" disable="true" layoutX="380.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="LowCase" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="120.0" />
                </GridPane.margin>
             </ToggleButton>
-            <ToggleButton disable="true" layoutX="10.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="OnlyMyCase" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <ToggleButton fx:id="btn_OnlyMyCase" disable="true" layoutX="10.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="OnlyMyCase" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets left="240.0" />
                </GridPane.margin>
@@ -192,7 +191,7 @@
         </rowConstraints>
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Пример возможного пароля:" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="225.0" GridPane.columnIndex="1" />
+            <Text fx:id="exa_password" disable="true" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="225.0" GridPane.columnIndex="1" />
          </children>
       </GridPane>
       <Button fx:id="btnOK" layoutX="750.0" layoutY="320.0" mnemonicParsing="false" onAction="#OKevent" text="ОК" />
